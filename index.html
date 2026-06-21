@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+         META
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eshaq Ali Amiri | Frontend Developer</title>
+
+    <meta name="description"
+        content="Professional Frontend Developer Portfolio - Eshaq Ali Amiri">
+
+    <!-- =========================
+         GOOGLE FONTS
+    ========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- =========================
+         CSS
+    ========================== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CUSTOM CURSOR
+    ========================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- =========================
+         SCROLL PROGRESS
+    ========================== -->
+    <div class="progress-bar"></div>
+
+    <!-- =========================
+         PARTICLE BACKGROUND
+    ========================== -->
+    <canvas id="particles"></canvas>
+
+    <!-- Floating Symbols -->
+    <div class="floating-elements">
+        <span>&lt;/&gt;</span>
+        <span>{ }</span>
+        <span>( )</span>
+        <span>;</span>
+        <span>JS</span>
+        <span>CSS</span>
+        <span>HTML</span>
+        <span>&lt;/&gt;</span>
+        <span>{ }</span>
+        <span>( )</span>
+        <span>;</span>
+        <span>JS</span>
+        <span>CSS</span>
+        <span>HTML</span>
+    </div>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo"> Eshaq Ali Amiri </a>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <button class="theme-toggl" id="themeToggle" aria-label="Toggle Theme">  </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-label"> Frontend Developer </p>
+                <h1 class="hero-title">
+                    <span class="gradient-text"> Crafting Code, </span> <br> Building Futures
+                </h1>
+                <p class="hero-description">
+                    Passionate Frontend Developer specializing in
+                    modern web experiences, responsive interfaces,
+                    performance optimization and elegant user-centered
+                    design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"> View Projects </a>
+                    <a href="#contact" class="btn btn-secondary"> Contact Me </a>
+                </div>
+            </div>
+            <div class="hero-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>boostrap</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2> About Me </h2>
+                <p style="max-width: 600px; margin: auto; ">
+                    Get to know more about me 
+                    and my development journey.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p> I'm Eshaq Ali Amiri, a passionate Frontend Developer
+                        dedicated to creating exceptional digital experiences.
+                    </p>
+
+                    <p> My focus is building fast, accessible,
+                        responsive and visually stunning web applications
+                        that help businesses grow and users enjoy every interaction.
+                    </p>
+
+                    <p> I combine clean code, modern technologies and
+                        user-centered design principles to deliver
+                        premium web solutions.
+                    </p>
+                </div>
+                <div class="tech-icons">
+
+                    <div class="icon" data-tooltip="html"><img src="image/html.png" alt="" height="40px" width="40px"></div>
+                    <div class="icon" data-tooltip="css"><img src="image/css.png" alt="" height="40px" width="40px"></div>
+                    <div class="icon" data-tooltip="Git"><img src="image/boostrap.png" alt="" height="40px" width="40px"></div>
+                    <div class="icon" data-tooltip="javascript"><img src="image/js.png" alt="" height="40px" width="40px"></div>
+                    <div class="icon" data-tooltip="react">⚛️</div>
+                    <div class="icon" data-tooltip="Git">🔧</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         STATS
+    ========================== -->
+    <!-- <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <h3 class="counter" data-target="2">0 </h3>
+                <p>Years Experience </p>
+            </div>
+
+            <div class="stat-card">
+                <h3 class="counter" data-target="20">0 </h3>
+                <p>Projects Completed </p>
+            </div>
+
+             <div class="stat-card">
+                <h3 class="counter" data-target="10">0 </h3>
+                <p>Happy Clients </p>
+            </div> 
+        </div>
+    </section> -->
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2> Services </h2>
+                <p>what I can do for you.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fas fa-code"></i> </div>
+                    <h3> Web Development</h3>
+                    <p> Modern responsive websites and web applications.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fas fa-pencil-ruler"></i> </div>
+                    <h3> UI/UX Design</h3>
+                    <p> Beautiful and user-centered interface design.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fa-brands fa-square-upwork"></i> </div>
+                    <h3> Freelance Consulting </h3>
+                    <p> Technical guidance and project consulting. </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"> <i class="fas fa-mobile-screen" ></i> </div>
+                    <h3> Responsive Design </h3>
+                    <p> Optimized for all screen sizes. </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"><i class="fas fa-gauge-high" ></i></div>
+                    <h3>Performance Optimization</h3>
+                    <p>Fast and optimized websites.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3>Maintenance</h3>
+                    <p>Continuous support and improvements.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p>Technologies and tools I work with.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Bootstrap</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="93%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>React</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>some of my recent projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image"><img src="image/E-Commerce-Website-Designs-768x437.jpg" alt=""></div>
+                    <h3> E-Commerce Website </h3>
+                    <p> Modern online shopping platform. </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image"><img src="image/Screenshot.png" alt=""></div>
+                    <h3> Portfolio Website </h3>
+                    <p> Modern luxury personal portfolio. </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image"><img src="image/restaurant.jpg" alt=""></div>
+                    <h3> Restaurant Website </h3>
+                    <p>modern Restauratn websites with online reserves</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header"> <h2>Contact Me</h2> </div>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="glass" action="https://formspree.io/f/mlgyrbaw" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn btn-primary"> Send Message </button>
+                </form>
+                <div id="successPopup" class="success-popup">
+                    <div class="popup-content">
+                        <div class="popup-icon"><i class="fa-solid fa-check"></i></div>
+                        <h3>Message Sent!</h3>
+                        <p>Your message has been sent successfully.</p>
+                        <button id="closePopup" class="btn btn-primary">OK</button>
+                    </div>
+                </div>
+             <div class="contact-info glass">
+
+                    <h3>Contact Information</h3>
+                    <p class="contact-email" > <i class="fas fa-envelope"></i> eshaqaliamiri313@gmail.com </p>
+                    <p class="social-links"> <i class="fa-brands fa-youtube"></i> <a href="https://youtube.com/@amiriacademy01?si=iyxW5hKXUpA9UFzF">YouTube</a> </p>
+                    <p class="social-links"> <i class="fab fa-telegram"></i> <a href="https://t.me/eshaqaliamiri">telegram</a> </p>
+                    <p class="contact-email"> <i class="fa-brands fa-whatsapp"></i> 0745290618</p>
+                    <p class="contact-email"> <i class="fas fa-location-dot"></i> Afghanistan </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Eshaq Ali Amiri. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <!-- =========================
+         JS
+    ========================== -->
+    <script src="script.js"></script>
+
+</body>
+</html>
